@@ -33,3 +33,4 @@ Xinqi Chen @05/04/2023
 
 ## Acknowledgement
 - [ChatGPT](https://platform.openai.com/)
+- [Matplotlib Documentation](https://matplotlib.org/stable/index.html)
