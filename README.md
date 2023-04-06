@@ -32,3 +32,4 @@ Xinqi Chen @05/04/2023
 ## Summary and Conclusions
 
 ## Acknowledgement
+- [ChatGPT](https://platform.openai.com/)
