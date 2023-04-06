@@ -1,5 +1,6 @@
 # 2Ddata-loss-landscape
 UW course work - EE399 - HW1
+</p>
 Xinqi Chen @05/04/2023 
 
 ## Table of Content
