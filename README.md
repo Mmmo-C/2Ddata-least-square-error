@@ -3,13 +3,13 @@ UW course work - EE399 - HW1
 
 ## Table of Content
 - [2Ddata-loss-landscape](#2ddata-loss-landscape)
-  -[Abstract](#abstract)
-  -[Objectives](#objective)
-  -[Overview](#overview)
-  -[Theoretical Background](#theoretical-background)
-  -[Algorithm Implementation and Development](#algorithm-implementation-and-development)
-  -[Computational Results](#computational-results)
-  -[Summary and Conclusions](#summary-and-conclusions)
+  - [Abstract](#abstract)
+  - [Objectives](#objective)
+  - [Overview](#overview)
+  - [Theoretical Background](#theoretical-background)
+  - [Algorithm Implementation and Development](#algorithm-implementation-and-development)
+  - [Computational Results](#computational-results)
+  - [Summary and Conclusions](#summary-and-conclusions)
 
 ## Abstract
 
