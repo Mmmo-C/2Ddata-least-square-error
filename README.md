@@ -12,6 +12,7 @@ Xinqi Chen @05/04/2023
   - [Algorithm Implementation and Development](#algorithm-implementation-and-development)
   - [Computational Results](#computational-results)
   - [Summary and Conclusions](#summary-and-conclusions)
+  - [Acknowledgement](#acknowledgement)
 
 ## Abstract
 
@@ -29,3 +30,5 @@ Xinqi Chen @05/04/2023
 ## Computational Results
 
 ## Summary and Conclusions
+
+## Acknowledgement
