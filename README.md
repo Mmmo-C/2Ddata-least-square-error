@@ -15,6 +15,7 @@ Xinqi Chen @05/04/2023
   - [Acknowledgement](#acknowledgement)
 
 ## Abstract
+This is an intro-level basic machine learning algorithm practice with a small sample space. The goal of the project is to explore simple concepts such as model fitting, loss function, error landscape, and model training. The project is done through Python packages including matplotlib, Sklearn, and Scipy.optimize. Based on the given dataset (size of 31), every aspect is handled in a 2-D plane, and Numpy arrays are used to hold and manipulate data.  
 
 ## Objectives
 - Determind the minimum error of given sinusodial model fitting using least-square error function.
