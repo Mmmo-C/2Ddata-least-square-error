@@ -64,7 +64,52 @@ for i, C in enumerate(C_vals):
         B_vals[i, j] = result.x[1]
 ```
 
-Finally, A_vals is plotted as a 2-D landscape using plt.pcolor() function, where the C_vals and D_vals are used as the x and y coordinates, and the error values stored in A_vals are used as the color values.
+Finally, A_vals is plotted as a 2-D landscape using plt.pcolor() function, where the C_vals and D_vals are used as the x and y coordinates, and the error values stored in A_vals are used as the color values. Part ii is finished by appying this algorithm to all combinations of two-variable sets.
+
+### Part iii & iv
+This question requires two sets of training data come from different part of the data set. The first group of training data is the first 20 data points, the second group of training data is the first 10 and the last 10 data points. 
+
+1. Line Fit
+The line fit to the training data using the least-squares method. It starts by creating a matrix A which stacks the features of the training data X_train as the first column, and a vector of ones as the second column. This is done to obtain the coefficients of the line equation y = mx + b, where m is the slope and b is the y-intercept.
+```ruby
+A = np.vstack([X_train, np.ones(len(X_train))]).T
+m, b = np.linalg.lstsq(A, Y_train, rcond=None)[0]
+```
+
+The least-squares method is then used to find the values of m and b that minimize the sum of the squared errors between the predicted values of the line Y_line_train and the actual training values Y_train. Once the coefficients are obtained, the line is used to predict the values of the test data X_test, and the squared errors between these predicted values and the actual test values Y_test are calculated.
+```ruby
+Y_line_train = m*X_train + b
+Y_line_test = m*X_test + b
+```
+
+The line_error_train variable represents the sum of the squared errors between the predicted values of the line and the actual training values, while line_error_test represents the sum of the squared errors between the predicted values of the line and the actual test values. These errors can be used to compare the performance of the line model on the training and test data, where a smaller error indicates a better fit.
+```ruby
+line_error_train = np.sqrt(np.sum((Y_train - Y_line_train)**2)/len(X_train))
+line_error_test = np.sqrt(np.sum((Y_test - Y_line_test)**2)/len(X_test))
+```
+
+2. Parabola Fit
+The parabola fit algorithm is simmilar with line fit, with replacing the linear expression to a parabola expression $$a*x^2+b*x+c$$ as the training function.
+
+3. 19th Degree Polynomial Fit
+To fit a 19th degree polynomial to the training data, first, a matrix A of size (n, 20) is created where n is the number of training data points. Each column of A represents a power of X_train from 0 to 19. The coefficients of the polynomial are then calculated using least squares regression by solving the equation A.T * A * coeffs = A.T * Y_train, where A.T is the transpose of A, Y_train is the vector of training data outputs, and coeffs is the vector of polynomial coefficients.
+```ruby
+A = np.zeros((len(X_train), 20))
+for i in range(20):
+    A[:, i] = X_train**i
+coeffs = np.linalg.lstsq(A, Y_train, rcond=None)[0]
+Y_poly_train = np.zeros(len(X_train))
+Y_poly_test = np.zeros(len(X_test))
+```
+
+Next, the polynomial function is evaluated at each point in the training and test sets using the calculated coefficients. This is done by iterating over each power of X_train and X_test, multiplying it by its corresponding coefficient, and summing the products. The resulting values are stored in the Y_poly_train and Y_poly_test vectors.
+```ruby
+for i in range(20):
+    Y_poly_train += coeffs[i]*X_train**i
+    Y_poly_test += coeffs[i]*X_test**i
+```
+
+Finally, the least square errors for the polynomial fit are computed by comparing the predicted outputs to the actual outputs in both the training and test sets. The error is calculated as the sum of the squared differences between the predicted and actual outputs. The resulting values are stored in the poly_error_train and poly_error_test variables, respectively.
 
 ## Computational Results
 
