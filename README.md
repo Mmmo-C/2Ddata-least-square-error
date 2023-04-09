@@ -37,6 +37,12 @@ In part (ii) of the problem, the loss landscape represents the variation of the 
 In parts (iii) and (iv), by comparing the errors of these models, we can evaluate their performance and choose the best one for the given data. This involves fitting the models to the training data and evaluating their performance on the test data, which are a set of data points that were not used during the training process. This helps to prevent overfitting of the model to the training data and provides an estimate of the model's generalization performance.
 
 ## Algorithm Implementation and Development 
+### Part i
+The minimize function from the scipy.optimize module with Nelder-Mead method is used to minimize the least-squares error between the model and the data.
+```ruby
+result = minimize(model_func, x0=[3, 1*np.pi/4, 2/3, 32], args=(X, Y), method='Nelder-Mead')
+y_fit = result.x[0]*np.cos(result.x[1]*X) + result.x[2]*X + result.x[3]
+```
 
 ## Computational Results
 
