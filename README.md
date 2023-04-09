@@ -9,7 +9,7 @@ Xinqi Chen @05/04/2023
   - [Overview](#overview)
   - [Theoretical Background](#theoretical-background)
   - [Algorithm Implementation and Development](#algorithm-implementation-and-development)
-    - [Part i](-part-i)
+    - [Part i](#part-i)
     - [Part ii](#part-ii)
     - [Part iii & iv](#part-ii-&-iv)
   - [Computational Results](#computational-results)
