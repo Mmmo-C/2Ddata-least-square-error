@@ -91,7 +91,7 @@ line_error_test = np.sqrt(np.sum((Y_test - Y_line_test)**2)/len(X_test))
 
 2. Parabola Fit
 
-The parabola fit algorithm is simmilar with line fit, with replacing the linear expression to a parabola expression $$a*x^2+b*x+c$$ as the training function.
+The parabola fit algorithm is simmilar with line fit, with replacing the linear expression to a parabola expression a*x^2+b*x+c as the training function.
 
 3. 19th Degree Polynomial Fit
 
