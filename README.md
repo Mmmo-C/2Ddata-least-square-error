@@ -11,7 +11,7 @@ Xinqi Chen @05/04/2023
   - [Algorithm Implementation and Development](#algorithm-implementation-and-development)
     - [Part i](#part-i)
     - [Part ii](#part-ii)
-    - [Part iii & iv](#part-iii&iv)
+    - [Part iii & iv](#part-iii--iv)
   - [Computational Results](#computational-results)
   - [Summary and Conclusions](#summary-and-conclusions)
   - [Acknowledgement](#acknowledgement)
