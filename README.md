@@ -45,3 +45,4 @@ In parts (iii) and (iv), by comparing the errors of these models, we can evaluat
 ## Acknowledgement
 - [ChatGPT](https://platform.openai.com/)
 - [Matplotlib Documentation](https://matplotlib.org/stable/index.html)
+- [Scipy Documentation](https://docs.scipy.org/doc/scipy/)
