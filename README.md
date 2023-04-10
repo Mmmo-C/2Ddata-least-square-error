@@ -119,6 +119,9 @@ Finally, the least square errors for the polynomial fit are computed by comparin
 
 ## Computational Results
 
+The minimum error and the least-square fitting results is:
+
+
 ## Summary and Conclusions
 
 ## Acknowledgement
