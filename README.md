@@ -72,7 +72,7 @@ Finally, A_vals is plotted as a 2-D landscape using plt.pcolor() function, where
 ### Part iii & iv
 This question requires two sets of training data come from different part of the data set. The first group of training data is the first 20 data points, the second group of training data is the first 10 and the last 10 data points. 
 
-1. Line Fit
+**Line Fit**
 
 The line fit to the training data using the least-squares method. It starts by creating a matrix A which stacks the features of the training data X_train as the first column, and a vector of ones as the second column. This is done to obtain the coefficients of the line equation y = mx + b, where m is the slope and b is the y-intercept.
 ```ruby
@@ -92,11 +92,11 @@ line_error_train = np.sqrt(np.sum((Y_train - Y_line_train)**2)/len(X_train))
 line_error_test = np.sqrt(np.sum((Y_test - Y_line_test)**2)/len(X_test))
 ```
 
-2. Parabola Fit
+**Parabola Fit**
 
 The parabola fit algorithm is simmilar with line fit, with replacing the linear expression to a parabola expression y = a*x^2 + b*x + c as the training function.
 
-3. 19th Degree Polynomial Fit
+**19th Degree Polynomial Fit**
 
 To fit a 19th degree polynomial to the training data, first, a matrix A of size (n, 20) is created where n is the number of training data points. Each column of A represents a power of X_train from 0 to 19. The coefficients of the polynomial are then calculated using least squares regression by solving the equation A.T * A * coeffs = A.T * Y_train, where A.T is the transpose of A, Y_train is the vector of training data outputs, and coeffs is the vector of polynomial coefficients.
 ```ruby
