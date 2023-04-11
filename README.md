@@ -144,7 +144,11 @@ Where the training error and the test error are:
 ![Part iv result](https://github.com/Mmmo-C/2Ddata-least-square-error/blob/main/results/p4.png)
 
 ## Summary and Conclusions
-In summary of all tests done so far, fitting a 19th degree polynomial to the data results in the lowest training error. However, when testing the models on the remaining 10 data points, the line and parabolic models perform better than the 19th degree polynomial. This suggests that the high degree polynomial model may be overfitting the training data, and is not able to generalize well to new data. Therefore, it may be better to use a simpler model such as a line or parabola to avoid overfitting. Additionally, by visualizing the 2D loss landscape, it is possible to see that the model is highly sensitive to the parameters C and D, which may require careful tuning to achieve good results.
+In summary of all tests had been done so far, fitting a 19th degree polynomial to the data results in the lowest training error.
+
+However, when testing the models on the remaining 10 data points, the line and parabolic models perform better than the 19th degree polynomial. This suggests that the high degree polynomial model may be overfitting the training data, and is not able to generalize well to new data. Therefore, it may be better to use a simpler model such as a line or parabola to avoid overfitting.
+
+Additionally, by visualizing the 2D loss landscape, it is possible to see that the model is highly sensitive to the parameters C and D, which may require careful tuning to achieve good results.
 
 ## Acknowledgement
 - [Instructor: Nathan Kutz](https://github.com/nathankutz)
