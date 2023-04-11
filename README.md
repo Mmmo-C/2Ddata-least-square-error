@@ -121,8 +121,30 @@ Finally, the least square errors for the polynomial fit are computed by comparin
 
 The minimum error and the least-square fitting results is:
 
+![Part i result](https://github.com/Mmmo-C/2Ddata-least-square-error/blob/main/results/p1.png)
+
+The 2D loss landscape is plotted as below:
+
+![Part ii result](https://github.com/Mmmo-C/2Ddata-least-square-error/blob/main/results/p2_loss_landscape.jpg)
+
+The line fit, parabola fit, and polynomial fit with the first 20 data points as traning data can be plotted as: 
+
+![Part iii plot](https://github.com/Mmmo-C/2Ddata-least-square-error/blob/main/results/p3_fit_plot.jpg)
+
+Where the training error and the test error are:
+
+![Part iii result](https://github.com/Mmmo-C/2Ddata-least-square-error/blob/main/results/p3.png)
+
+The line fit, parabola fit, and polynomial fit with the first 10 and the last 10 data points as traning data can be plotted as: 
+
+![Part iv plot](https://github.com/Mmmo-C/2Ddata-least-square-error/blob/main/results/p4_fit_plot.jpg)
+
+Where the training error and the test error are:
+
+![Part iv result](https://github.com/Mmmo-C/2Ddata-least-square-error/blob/main/results/p4.png)
 
 ## Summary and Conclusions
+
 
 ## Acknowledgement
 - [ChatGPT](https://platform.openai.com/)
